@@ -1,21 +1,22 @@
 body {
-	background-color: lightgrey;
+	background-color: hsl(0, 100%, 95%);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body>header, #wrapper>header, body>footer, #wrapper>footer {
-	background-color: #e0b9ec;
+	background-color: hsl(0, 100%, 90%);
 }
 
 body>main, #wrapper>main {
-	background-color: #ecc7b9;
+	background-color: hsl(0, 100%, 80%);
 }
 
 nav {
-	background-color: #c4ecb9;
+	background-color: hsl(260, 100%, 90%);
 }
 
 main>article, main>section {
-	background-color: whitesmoke;
+	background-color: hsl(0, 0%, 95%);
 }
 
 article>section, section>article {
@@ -23,7 +24,7 @@ article>section, section>article {
 }
 
 aside {
-	background-color: #b9deec;
+	background-color: hsl(0, 100%, 50%);
 }
 
 body>header, #wrapper>header, body>footer, #wrapper>footer, main, nav, aside, article, section {
