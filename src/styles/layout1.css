@@ -1,5 +1,16 @@
-#wrapper>main {
-    display:grid;
-    grid-template-columns: 5fr 1fr;
-    grid-template-rows: 1fr;
-}
+@media only screen and (min-width: 768px) {
+    #wrapper {
+        width:80%;
+        margin: 0 auto;
+    }
+    
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #wrapper>main {
+        display:grid;
+        grid-template-columns: 5fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+  }
