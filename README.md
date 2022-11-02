@@ -12,4 +12,4 @@
 
 Deploy on Netlify at https://semantic-layouts.netlify.app/
 
-![screenshot](./public/capture-ecran.png.jpg)
+![screenshot](./public/capture-ecran.png)
