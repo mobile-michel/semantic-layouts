@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MainNav from '../components/MainNav.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from './articles/section.astro';
+const pageTitle = "Articles inside Section";
+---
+<BaseLayout pageTitle={pageTitle}>
+<Header></Header>
+<MainNav></MainNav>
+<main>
+    <Section />
+</main>
+<Footer></Footer>
+</BaseLayout>

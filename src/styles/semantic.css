@@ -1,0 +1,31 @@
+body {
+	background-color: lightgrey;
+}
+
+body>header, #wrapper>header, body>footer, #wrapper>footer {
+	background-color: #e0b9ec;
+}
+
+body>main, #wrapper>main {
+	background-color: #ecc7b9;
+}
+
+nav {
+	background-color: #c4ecb9;
+}
+
+main>article, main>section {
+	background-color: whitesmoke;
+}
+
+article>section, section>article {
+	border: black 1px solid;
+}
+
+aside {
+	background-color: #b9deec;
+}
+
+body>header, #wrapper>header, body>footer, #wrapper>footer, main, nav, aside, article, section {
+	padding: 5px;
+}

@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MainNav from '../components/MainNav.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Article from './articles/article.astro';
+const pageTitle = "Nav before Header";
+---
+<BaseLayout pageTitle={pageTitle}>
+<MainNav></MainNav>
+<Header></Header>
+<main>
+    <Article />
+</main>
+<Footer></Footer>
+</BaseLayout>
