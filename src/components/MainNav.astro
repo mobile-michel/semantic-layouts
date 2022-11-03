@@ -1,9 +1,79 @@
-            <nav>
-                <a href="/">Nav before Header</a>
-                <a href="/NavInsideHeader">Nav inside Header</a>
-                <a href="/NavAfterHeader">Nav after Header</a>
-                <a href="/ArticlesInsideSection">Articles inside section</a>
-                <a href="/SectionsInsideArticle">Sections inside article</a>
-                <a href="/RelatedAside">Related Aside</a>
-                <a href="/IndirectlyRelatedAside">Indirectly Related Aside</a>
-            </nav>
+---
+---
+        <nav>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="nav-links">
+                <a href="/" title="Nav before Header">Layout1</a>
+                <a href="/NavInsideHeader" title="Nav inside Header">Layout2</a>
+                <a href="/NavAfterHeader" title="Nav after Header">Layout3</a>
+                <a href="/ArticlesInsideSection" title="Articles inside section">Layout 4</a>
+                <a href="/SectionsInsideArticle" title="Sections inside article">Layout5</a>
+                <a href="/RelatedAside" title="Related Aside">Layout6</a>
+                <a href="/IndirectlyRelatedAside" title="Indirectly Related Aside">Layout7</a>
+            </div>
+        </nav>
+
+<style>
+    /* nav styles */
+
+.hamburger {
+  padding-right: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 4px;
+  margin-bottom: 10px;
+  background-color: hsl(0, 100%, 50%);
+}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: hsl(0, 100%, 50%);
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.nav-links a:hover, a:focus {
+  background-color: hsl(0, 100%, 80%);
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-links {
+    margin-left: 1em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 1px 5px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+</style>
