@@ -1,0 +1,125 @@
+body {
+    background-color: #ffe5e5;
+    font-family: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif
+}
+
+body>header,
+#wrapper>header,
+body>footer,
+#wrapper>footer {
+    background-color: #fcc
+}
+
+body>main,
+#wrapper>main {
+    background-color: #f99
+}
+
+nav {
+    background-color: #dcf
+}
+
+main>article,
+main>section {
+    background-color: #f2f2f2
+}
+
+article>section,
+section>article {
+    border: black 1px solid
+}
+
+aside {
+    background-color: red
+}
+
+body>header,
+#wrapper>header,
+body>footer,
+#wrapper>footer,
+main,
+nav,
+aside,
+article,
+section {
+    padding: 5px
+}
+
+@media only screen and (min-width: 768px) {
+    #wrapper {
+        width: 80%;
+        margin: 0 auto
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #wrapper>main {
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+        grid-template-rows: 1fr
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    #wrapper {
+        width: 1024px
+    }
+}
+
+.hamburger:where(.astro-M47HKXQH) {
+    padding-right: 20px;
+    margin-top: 5px;
+    cursor: pointer
+}
+
+.hamburger:where(.astro-M47HKXQH) .line:where(.astro-M47HKXQH) {
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: red
+}
+
+.nav-links:where(.astro-M47HKXQH) {
+    width: 100%;
+    top: 5rem;
+    left: 48px;
+    background-color: red;
+    display: none;
+    margin: 0
+}
+
+.nav-links:where(.astro-M47HKXQH) a:where(.astro-M47HKXQH) {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none
+}
+
+.nav-links:where(.astro-M47HKXQH) a:where(.astro-M47HKXQH):hover,
+a:where(.astro-M47HKXQH):focus {
+    background-color: #f99
+}
+
+.expanded:where(.astro-M47HKXQH) {
+    display: unset
+}
+
+@media screen and (min-width: 768px) {
+    .nav-links:where(.astro-M47HKXQH) {
+        margin-left: 1em;
+        display: block;
+        position: static;
+        width: auto;
+        background: none
+    }
+
+    .nav-links:where(.astro-M47HKXQH) a:where(.astro-M47HKXQH) {
+        display: inline-block;
+        padding: 1px 5px
+    }
+
+    .hamburger:where(.astro-M47HKXQH) {
+        display: none
+    }
+}

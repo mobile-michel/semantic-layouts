@@ -1,13 +1,17 @@
 ---
-title: Layout 1
-description: Nav inside Header
+title: Home
+description: This is the home page
 layout: base
 tags: primaryNav
+date: 2023-06-01
 ---
 {% include 'nav.html' %}
-{% include 'header.html' %}
+<header>
+    {% include 'header.html' %}
+</header>
 <main>
-<p>{{description}}</p>
-{% include 'article.html' %}
+    {% for nav in collections.primaryNav %}
+    <p><a href="{{ nav.url }}" title="{{ nav.data.title }}">{{ nav.data.title }}</a>: {{nav.data.description}}</p>
+    {% endfor %}
 </main>
 {% include 'footer.html' %}

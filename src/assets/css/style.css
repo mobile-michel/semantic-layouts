@@ -1,57 +1,130 @@
 body {
-	background-color: hsl(0, 100%, 95%);
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: hsl(0, 100%, 95%);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body>header, #wrapper>header, body>footer, #wrapper>footer {
-	background-color: hsl(0, 100%, 90%);
+body>header,
+#wrapper>header,
+body>footer,
+#wrapper>footer {
+  background-color: hsl(0, 100%, 90%);
 }
 
-body>main, #wrapper>main {
-	background-color: hsl(0, 100%, 80%);
+body>main,
+#wrapper>main {
+  background-color: hsl(0, 100%, 80%);
 }
 
 nav {
-	background-color: hsl(260, 100%, 90%);
+  background-color: hsl(260, 100%, 90%);
 }
 
-main>article, main>section {
-	background-color: hsl(0, 0%, 95%);
+main>article,
+main>section {
+  background-color: hsl(0, 0%, 95%);
 }
 
-article>section, section>article {
-	border: black 1px solid;
+article>section,
+section>article {
+  border: black 1px solid;
 }
 
 aside {
-	background-color: hsl(0, 100%, 50%);
+  background-color: hsl(0, 100%, 50%);
 }
 
-body>header, #wrapper>header, body>footer, #wrapper>footer, main, nav, aside, article, section {
-	padding: 5px;
+body>header,
+#wrapper>header,
+body>footer,
+#wrapper>footer,
+main,
+nav,
+aside,
+article,
+section {
+  padding: 5px;
 }
 
 @media only screen and (min-width: 768px) {
-    #wrapper {
-        width:80%;
-        margin: 0 auto;
-    }
-    
+  #wrapper {
+    width: 80%;
+    margin: 0 auto;
   }
 
-  @media only screen and (min-width: 1024px) {
-    #wrapper>main {
-        display:grid;
-        grid-template-columns: 5fr 1fr;
-        grid-template-rows: 1fr;
-    }
-    
+}
+
+@media only screen and (min-width: 1024px) {
+  #wrapper>main:has(aside) {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr;
   }
 
-  @media only screen and (min-width: 1280px) {
-    #wrapper {
-        width: 1024px;
-    }
-    
+}
+
+@media only screen and (min-width: 1280px) {
+  #wrapper {
+    width: 1024px;
   }
 
+}
+
+/* nav styles */
+
+.hamburger {
+  padding-right: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 4px;
+  margin-bottom: 10px;
+  background-color: hsl(0, 100%, 50%);
+}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: hsl(0, 100%, 50%);
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+a:focus {
+  background-color: hsl(0, 100%, 80%);
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-links {
+    margin-left: 1em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 1px 5px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
