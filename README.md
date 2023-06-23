@@ -19,3 +19,10 @@ Deploy on Netlify at https://semantic-layouts.netlify.app/
 23 June 2023
 
 1. Deleted everything from Astro & config
+2. Installationof Eleventy
+3. Layout & includes
+4. Install stylesheet
+5. Modify nav.html for automatic collections
+6. Corrections
+7. Problem with Netlify deploy (Build failed due to a user error: Build script returned non-zero exit code: 2)
+Solution: go to Site settings -> Build & deploy -> Build settings -> Publish directory: change "dist" to "_site"

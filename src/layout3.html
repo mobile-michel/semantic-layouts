@@ -5,10 +5,24 @@ layout: base
 tags: primaryNav
 ---
 <header>
-{% include 'header.html' %}
+    {% include 'header.html' %}
 </header>
 {% include 'nav.html' %}
 <main>
-{% include 'section.html' %}
+    {% include 'section.html' %}
+    <ul>
+        <li>Header</li>
+        <li>Nav</li>
+        <li>Main</li>
+        <ul>
+            <li>Section</li>
+            <ul>
+                <li>Article</li>
+                <li>Article</li>
+                <li>Article</li>
+            </ul>
+        </ul>
+        <li>Footer</li>
+    </ul>
 </main>
 {% include 'footer.html' %}
