@@ -1,11 +1,13 @@
 ---
-title: Home
+title: Layout 1
+description: Nav inside Header
 layout: base
-tags : primary
+tags: primaryNav
 ---
 {% include 'nav.html' %}
 {% include 'header.html' %}
 <main>
+<p>{{description}}</p>
 {% include 'article.html' %}
 </main>
 {% include 'footer.html' %}
