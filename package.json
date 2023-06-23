@@ -1,0 +1,17 @@
+{
+  "name": "semantic-layouts",
+  "version": "1.0.0",
+  "description": "## Six basic layouts",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "eleventy",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "keywords": [],
+  "author": "Michel Maillard",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
