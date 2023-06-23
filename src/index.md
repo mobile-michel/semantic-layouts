@@ -3,4 +3,9 @@ title: Home
 layout: base
 tags : primary
 ---
-This is the home page.
+{% include 'nav.html' %}
+{% include 'header.html' %}
+<main>
+{% include 'article.html' %}
+</main>
+{% include 'footer.html' %}
