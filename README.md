@@ -17,3 +17,5 @@ Deploy on Netlify at https://semantic-layouts.netlify.app/
 ## Upgrade from Astro to Eleventy
 
 23 June 2023
+
+1. Deleted everything from Astro & config
