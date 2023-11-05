@@ -1,20 +1,17 @@
 ---
-title: Layout 4
-description: Articles inside section
-layout: base
-tags: primaryNav
+title: Layout 1
+description: Nav before Header
+date: 2023-06-02
 ---
+{% include 'version5/nav.html' %}
 <header>
-    {% include 'header.html' %}
+    {% include 'version5/header.html' %}
 </header>
-{% include 'nav.html' %}
 <main>
-    <section>
-        {% include 'article.html' %}
-    </section>
+    {% include 'version5/article.html' %}
     <ul>
-        <li>Header</li>
         <li>Nav</li>
+        <li>Header</li>
         <li>Main</li>
         <ul>
             <li>Article</li>
@@ -27,4 +24,4 @@ tags: primaryNav
         <li>Footer</li>
     </ul>
 </main>
-{% include 'footer.html' %}
+{% include 'version5/footer.html' %}

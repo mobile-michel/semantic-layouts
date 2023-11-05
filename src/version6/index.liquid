@@ -1,0 +1,83 @@
+---
+title: Version 6
+description: Nouvelle version de layout
+tags:
+- layouts
+---
+{% include 'version6/header' %}
+{% include 'version6/nav' %}
+<main>
+    <h1>{{title}}</h1>
+    <p>{{description}}</p>
+    <section aria-label="Semantic structure">
+        <code>
+            <pre>
+                <h2>Semantic structure</h2>
+body
+    header
+    nav
+    main
+        section
+    aside
+    footer
+            </pre>
+        </code>
+    </section>
+    <section aria-label="Visual layout">
+        <h2>Desktop & tablet landscape</h2>
+        <code>
+            <pre>
+----------------------------------------
+| header                               |
+|--------------------------------------|
+| nav | main                   | aside |
+|     |                        |       |
+|     | ---------------------- |       |
+|     | | section            | |       |
+|     | ---------------------- |       |
+|--------------------------------------|
+| footer                               |
+----------------------------------------
+            </pre>
+        </code>
+        <h2>Tablet portrait & cellphone landscape</h2>
+        <code>
+            <pre>
+--------------------------------
+| header                       |
+|------------------------------|
+| nav | main                   |
+|     |                        |
+|     | ---------------------- |
+|     | | section            | |
+|     | ---------------------- |
+|------------------------------|
+| aside                        |
+|------------------------------|
+| footer                       |
+--------------------------------
+            </pre>
+        </code>
+        <h2>cellphone portrait</h2>
+        <code>
+            <pre>
+--------------------------
+| header                 |
+|------------------------|
+| nav                    |
+|------------------------|
+| main                   |
+|                        |
+| ---------------------- |
+| | section            | |
+| ---------------------- |
+|------------------------|
+| aside                  |
+|------------------------|
+| footer                 |
+--------------------------
+            </pre>
+        </code>
+</main>
+{% include 'version6/aside' %}
+{% include 'version6/footer' %}

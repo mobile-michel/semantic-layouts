@@ -1,17 +1,17 @@
 ---
-title: Home
+title: Version 5
 description: This is the home page
-layout: base
-tags: primaryNav
 date: 2023-06-01
+tags:
+  - layouts
 ---
-{% include 'nav.html' %}
+{% include 'version5/nav.html' %}
 <header>
-    {% include 'header.html' %}
+    {% include 'version5/header.html' %}
 </header>
 <main>
     {% for nav in collections.primaryNav %}
     <p><a href="{{ nav.url }}" title="{{ nav.data.title }}">{{ nav.data.title }}</a>: {{nav.data.description}}</p>
     {% endfor %}
 </main>
-{% include 'footer.html' %}
+{% include 'version5/footer.html' %}

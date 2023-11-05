@@ -1,7 +1,7 @@
 {
   "name": "semantic-layouts",
   "version": "1.0.0",
-  "description": "## Six basic layouts",
+  "description": "Six basic layouts",
   "main": "eleventy.config.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
