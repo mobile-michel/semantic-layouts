@@ -1,0 +1,41 @@
+---
+title: Version 4
+layout: base-v4
+tags:
+  - layouts
+  - version4
+---
+    <article>
+    <h2>Basic Layout n° 2</h2>
+    <p>texte</p>
+    </article>
+    <section>
+      <pre>
+      ## Layout Structure
+    ┌──────────────────────
+    │ layouts/PageLayout.astro
+    │ ┌────────────────────
+    │ │ components/BaseHead.astro
+    │ └────────────────────
+    │ ┌────────────────────
+    │ │ components/BaseBody.astro
+    │ │ ┌──────────────────
+    │ │ │ components/MainHeader.astro
+    │ │ │ ┌────────────────
+    │ │ │ │ components/Nav.astro
+    │ │ │ └────────────────
+    │ │ └──────────────────
+    │ │ ┌──────────────────
+    │ │ │ pages/index.astro
+    │ │ │ (slot)
+    │ │ │
+    │ │ │
+    │ │ │
+    │ │ └──────────────────
+    │ │ ┌──────────────────
+    │ │ │ components/MainFooter.astro
+    │ │ └──────────────────
+    │ └────────────────────
+    └──────────────────────
+      </pre>
+    </section>

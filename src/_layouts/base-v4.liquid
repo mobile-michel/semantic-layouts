@@ -1,0 +1,25 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import BaseBody from '../components/BaseBody.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" sizes="32x32" href="favicon.ico">
+    <title>{title}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/version4/semantic.css">
+</head>
+<body class="font-sans antialiased bg-gray-100 dark:bg-gray-800 transition-colors">
+    <div id="wrapper" class="mx-auto max-w-4xl">
+        {% include 'version4/MainHeader' %}
+        <main>
+            {{content}}
+        </main>
+        {% include 'version4/MainFooter' %}
+    </div>
+</body>
+</html>

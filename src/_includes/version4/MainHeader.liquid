@@ -1,0 +1,15 @@
+<header>
+    <div class="flex">
+        <img src="/assets/images/logo.svg" alt="logo" class="h-12">
+        <h1>Company Name</h1>
+    </div>
+    <nav class="nav py-3">
+        <ul class="nav-list inline-flex list-none gap-8 text-xl font-semibold py-2">
+            {% for nav in collections.version4 %}
+                <li class="nav-item">
+                    <a href="{{ nav.url }}" class="nav-link">{{ nav.data.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
