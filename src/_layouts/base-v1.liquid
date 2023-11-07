@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="wrapper" class="container mx-auto bg-zinc-100 flex flex-col min-h-screen">
+        <header>
+            <h1 class="bg-zinc-600 text-white p-2 text-center text-4xl">Header</h1>
+        </header>
+        <section class="p-6 text-center">
+            <h1 class="text-9xl">Hero</h1>
+            <p>tagline of company</p>
+        </section>
+        <nav class="bg-zinc-400 flex flex-col md:flex-row text-center">
+            {% for nav in collections.version1 %}
+            <a class="grow hover:bg-zinc-700 hover:text-white" href="{{ nav.url }}">{{ nav.data.title }}</a>
+            {% endfor %}
+        </nav>
+
+        <main class="flex-grow flex flex-col md:flex-row">
+
+            <section class="flex-grow bg-zinc-200 p-6">
+                <h1 class="text-4xl">{{description}}</h1>
+                {{content}}
+            </section>
+
+            <aside class="md:w-1/4 bg-zinc-300 p-6">
+                <ul>
+                    <li><a href="#">Dog</a></li>
+                    <li><a href="#">Cat</a></li>
+                    <li><a href="#">Platipus</a></li>
+                </ul>
+            </aside>
+
+        </main>
+
+        <footer class="bg-zinc-600 text-white p-2 text-center">
+            <p>footer</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
