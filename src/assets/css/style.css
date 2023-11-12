@@ -1,0 +1,17 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+article {
+  margin: 0 auto;
+  max-width: 18em;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #ccc;
+}
+article img {
+    width: 79%;
+    height: auto;
+}

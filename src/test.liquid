@@ -1,0 +1,10 @@
+---
+title: Semantic Layouts
+description: 6 differents versions of semantic layouts.
+layout: base
+---
+<section>
+    {% for item in repos.items %}
+        {% render 'card' name: item.name, url: item.url, description: item.description, old-name: item.old-name, screenshot: item.screenshot, github: item.github, netlify: item.netlify %}
+    {% endfor %}
+</section>
