@@ -1,0 +1,18 @@
+---
+import SideNav1 from '../components/nav/styleSidebar.astro'
+import SideNav2 from '../components/nav/templateSidebar.astro'
+---
+
+	<main>
+		<aside id="grid-left">
+			<SideNav1 />
+		</aside>
+		<div id="grid-main">
+			<article>
+				<slot />
+			</article>
+		</div>
+		<aside id="grid-right">
+			<SideNav2 />
+		</aside>
+	</main>

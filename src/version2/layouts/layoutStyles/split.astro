@@ -1,0 +1,49 @@
+---
+import PageLayout from '../../layouts/pageLayout.astro'
+import MainNav from '../../components/nav/styleNavbar.astro'
+import SideNav1 from '../../components/nav/styleSidebar.astro'
+const { content } = Astro.props
+---
+
+<PageLayout content={content}>
+	<header>
+    <MainNav />
+	</header>
+	<main>
+		<aside id="grid-left">
+			<img src="/assets/header.jpg">
+		</aside>
+		<div id="grid-main">
+			<article>
+				<slot />
+			</article>
+		</div>
+	</main>
+	<footer>
+		<nav title="Footer Navigation"><span>Footer</span></nav>
+	</footer>
+</PageLayout>
+
+<style>
+	body {
+		@apply min-h-screen flex flex-col
+	}
+	header {
+		@apply p-4 bg-cyan-50
+	}
+	img {
+		@apply w-full h-full object-cover
+	}
+	main {
+		@apply grow mx-auto flex flex-col md:flex-row lg:w-5/6 bg-white
+	}
+	aside {
+		@apply w-1/2
+	}
+	#grid-main {
+		@apply w-1/2 p-4 bg-sky-500
+	}
+	footer {
+		@apply bg-cyan-50 p-4
+	}
+</style>

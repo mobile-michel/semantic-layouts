@@ -1,7 +1,7 @@
 ---
 title: Version 3
 layout: base
-date: 2023-11-01
+date: 2023-11-03
 tags:
   - layouts
   - version3

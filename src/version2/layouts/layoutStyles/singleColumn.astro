@@ -1,0 +1,50 @@
+---
+import PageLayout from '../../layouts/pageLayout.astro'
+import MainNav from '../../components/nav/mainNavbar.astro'
+import SideNav1 from '../../components/nav/styleSidebar.astro'
+import SideNav2 from '../../components/nav/templateSidebar.astro'
+const { content } = Astro.props
+---
+
+<PageLayout content={content}>
+	<header>
+    <MainNav />
+	</header>
+	<main>
+		<aside id="grid-left">
+			<SideNav1 />
+		</aside>
+		<div id="grid-main">
+			<article class="prose max-w-none prose-a:text-blue-600">
+				<slot />
+			</article>
+		</div>
+		<aside id="grid-right">
+			<SideNav2 />
+		</aside>
+	</main>
+	<footer>
+		<nav title="Footer Navigation"><span>Footer</span></nav>
+	</footer>
+</PageLayout>
+
+<style>
+	body {
+		@apply min-h-screen flex flex-col
+	}
+	header {
+		@apply p-4 bg-cyan-50
+	}
+	main {
+		@apply grow mx-auto flex flex-col md:flex-row p-4 lg:w-5/6 bg-white
+	}
+	aside {
+		@apply p-4 border
+	}
+	#grid-main {
+		@apply grow p-4 border
+	}
+	footer {
+		@apply bg-cyan-50
+	}
+</style>
