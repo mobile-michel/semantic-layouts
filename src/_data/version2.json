@@ -1,0 +1,104 @@
+{
+    "title": "Tailwind templates & components",
+    "description": "An ensemble of well designed templates starting from a project of Ross Topping.",
+    "footer": "© 2022 Michel Maillard Copyright | info@maillard.li",
+    "navMain":
+    [
+        {
+            "title": "overview",
+            "path": "/version2",
+            "name": "Home"
+        },
+        {
+            "title": "accordion",
+            "path": "/version2/accordion",
+            "name": "Accordions"
+        },
+        {
+            "title": "card",
+            "path": "/version2/card",
+            "name": "Cards"
+        }
+    ],
+    "navTemplate":
+    [
+        {
+            "title": "skycrapper",
+            "path": "/version2/rosstopping/skycrapper",
+            "name": "Skycrapper"
+        },
+        {
+            "title": "fullscreen",
+            "path": "/version2/rosstopping/fullscreen",
+            "name": "Fullscreen"
+        },
+        {
+            "title": "blocks",
+            "path": "/version2/rosstopping/blocks",
+            "name": "Blocks"
+        },
+        {
+            "title": "marketing",
+            "path": "/version2/rosstopping/marketing",
+            "name": "Marketing"
+        },
+        {
+            "title": "product",
+            "path": "/version2/rosstopping/product",
+            "name": "Product"
+        }
+    ],
+    "navStyle":
+    [
+        {
+            "title": "single",
+            "path": "/version2/single",
+            "name": "Single column"
+        },
+        {
+            "title": "split",
+            "path": "/version2/split",
+            "name": "Split screen"
+        },
+        {
+            "title": "asymmetrical",
+            "path": "/rosstopping/asymmetrical",
+            "name": "Asymmetrical"
+        },
+        {
+            "title": "grid",
+            "path": "/rosstopping/grid",
+            "name": "Grid of cards"
+        },
+        {
+            "title": "magazine",
+            "path": "/rosstopping/magazine",
+            "name": "Magazine"
+        },
+        {
+            "title": "boxes",
+            "path": "/rosstopping/boxes",
+            "name": "Boxes"
+        },
+        {
+            "title": "fixed",
+            "path": "/rosstopping/fixed",
+            "name": "Fixed sidebar"
+        },
+        {
+            "title": "featured",
+            "path": "/version2/featured",
+            "name": "Featured image"
+        },
+        {
+            "title": "fshape",
+            "path": "/rosstopping/fshape",
+            "name": "F-shape"
+        },
+        {
+            "title": "zshape",
+            "path": "/rosstopping/zshape",
+            "name": "Z-shape"
+        }
+    ]
+}

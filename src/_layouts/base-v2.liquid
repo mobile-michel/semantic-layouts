@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,10 +8,29 @@
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-	<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-	{{content}}
+
+<body class="{{body}}">
+	<header class="p-4 bg-cyan-50">
+		{% include 'version2/nav/mainNavbar' %}
+	</header>
+	<main class="{{main}}">
+		<aside id="grid-left" class="p-4 border">
+			{% include 'version2/nav/styleSidebar' %}
+		</aside>
+		<div id="grid-main" class="{{grid-main}}">
+			<article class="prose max-w-none prose-a:text-blue-600">
+				{{content}}
+			</article>
+		</div>
+		<aside id="grid-right" class="p-4 border">
+			{% include 'version2/nav/templateSidebar' %}
+		</aside>
+	</main>
+	<footer class="bg-cyan-50">
+		<nav title="Footer Navigation"><span>Footer</span></nav>
+	</footer>
 </body>
+
 </html>

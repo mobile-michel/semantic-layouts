@@ -43,7 +43,7 @@
             "old-name": "semantic-layouts",
             "description": "CSS perso",
             "github": "https://github.com/mobile-michel/semantic-layouts",
-            "netlify": "https://semantic-layouts.netlify.app/",
+            "netlify": "https://semantic-layouts.netlify.app/version5/",
             "screenshot": "version5.png"
         },
         {
@@ -52,7 +52,7 @@
             "old-name": "",
             "description": "CSS perso",
             "github": "https://github.com/mobile-michel/semantic-layouts",
-            "netlify": "https://semantic-layouts.netlify.app/",
+            "netlify": "https://semantic-layouts.netlify.app/version6/",
             "screenshot": "version6.png"
         }
     ]
