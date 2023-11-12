@@ -12,7 +12,7 @@
         },
         {
             "name": "Version 2",
-            "url": "version2/pages",
+            "url": "version2",
             "old-name": "tailwind-templates-v1",
             "description": "Tailwind CSS",
             "github": "https://github.com/mobile-michel/tailwind-templates-v1",
