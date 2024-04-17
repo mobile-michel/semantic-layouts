@@ -6,7 +6,7 @@
     </div>
     <div class="nav-links astro-M47HKXQH">
         {% for nav in collections.primaryNav %}
-        <a href="{{ nav.url }}" title="{{ nav.data.title }}">{{ nav.data.title }}</a>
+        <a href="{{ nav.url | url }}" title="{{ nav.data.title }}">{{ nav.data.title }}</a>
         {% endfor %}
     </div>
 </nav>

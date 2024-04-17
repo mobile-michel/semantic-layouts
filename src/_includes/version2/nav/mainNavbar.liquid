@@ -5,7 +5,7 @@
 				<!-- Primary Navbar items -->
 				<div class="hidden md:flex items-center space-x-1">
 					{% for item in version2.navMain %}
-					<a href="{{item.path}}" class="py-4 px-2 text-gray-500 font-semibold hover:text-white hover:bg-sky-300 transition duration-300">{{item.name}}</a>
+					<a href="{{ item.path | url }}" class="py-4 px-2 text-gray-500 font-semibold hover:text-white hover:bg-sky-300 transition duration-300">{{item.name}}</a>
 					{% endfor %}
 				</div>
 			</div>
@@ -24,7 +24,7 @@
 		<ul class="bg-white/70">
 		{% for item in version2.navMain %}
 			<li>
-				<a href="{{item.path}}" class="block text-sm font-bold px-2 py-4 hover:bg-sky-300 hover:text-white transition duration-300">{{item.name}}</a>
+				<a href="{{ item.path | url }}" class="block text-sm font-bold px-2 py-4 hover:bg-sky-300 hover:text-white transition duration-300">{{item.name}}</a>
 			</li>
 		{% endfor %}
 		</ul>

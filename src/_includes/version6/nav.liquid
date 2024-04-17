@@ -1,7 +1,7 @@
 <nav>
     <ul>
     {% for nav in collections.version6 %}
-    <li><a href="{{ nav.url }}" title="{{ nav.data.title }}">{{ nav.data.title }}</a></li>
+    <li><a href="{{ nav.url | }}" title="{{ nav.data.title }}">{{ nav.data.title }}</a></li>
     {% endfor %}
     </ul>
 </nav>

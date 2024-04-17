@@ -8,7 +8,7 @@
             "description": "Tailwind CSS",
             "github": "https://github.com/mobile-michel/tailwind-layout-v1",
             "netlify": "https://tailwind-layout-v1.netlify.app/",
-            "screenshot": "version1.png"
+            "screenshot": "/assets/images/version1.png"
         },
         {
             "name": "Version 2",
@@ -17,7 +17,7 @@
             "description": "Tailwind CSS",
             "github": "https://github.com/mobile-michel/tailwind-templates-v1",
             "netlify": "https://tailwind-templates-v1.netlify.app/",
-            "screenshot": "version2.png"
+            "screenshot": "/assets/images/version2.png"
         },
         {
             "name": "Version 3",
@@ -26,7 +26,7 @@
             "description": "Tailwind CSS",
             "github": "https://github.com/mobile-michel/layouts-with-background-image",
             "netlify": "https://layouts-with-background-image.netlify.app/",
-            "screenshot": "version3.jpg"
+            "screenshot": "/assets/images/version3.jpg"
         },
         {
             "name": "Version 4",
@@ -35,7 +35,7 @@
             "description": "Tailwind CSS",
             "github": "https://github.com/mobile-michel/basic-layout2",
             "netlify": "https://basic-layout2.netlify.app/",
-            "screenshot": "version4.png"
+            "screenshot": "/assets/images/version4.png"
         },
         {
             "name": "Version 5",
@@ -44,7 +44,7 @@
             "description": "CSS perso",
             "github": "https://github.com/mobile-michel/semantic-layouts",
             "netlify": "https://semantic-layouts.netlify.app/version5/",
-            "screenshot": "version5.png"
+            "screenshot": "/assets/images/version5.png"
         },
         {
             "name": "Version 6",
@@ -53,7 +53,7 @@
             "description": "CSS perso",
             "github": "https://github.com/mobile-michel/semantic-layouts",
             "netlify": "https://semantic-layouts.netlify.app/version6/",
-            "screenshot": "version6.png"
+            "screenshot": "/assets/images/version6.png"
         }
     ]
 }

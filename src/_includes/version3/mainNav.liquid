@@ -6,7 +6,7 @@
 						<!-- Primary Navbar items -->
 						<div class="hidden md:flex items-center">
 							{% for nav in collections.version3 %}
-									<a href="{{ nav.url }}"  class="p-2 font-semibold hover:text-white hover:bg-blue-500 transition duration-300">{{ nav.data.title }}</a>
+									<a href="{{ nav.url | url }}"  class="p-2 font-semibold hover:text-white hover:bg-blue-500 transition duration-300">{{ nav.data.title }}</a>
 							{% endfor %}
 						</div>
 					</div>
@@ -24,7 +24,7 @@
 			<div class="hidden mobile-menu">
 				<ul class="bg-white/70">
 				{% for nav in collections.version3 %}
-						<a href="{{ nav.url }}"  class="block text-sm font-semibold p-2 hover:bg-blue-500 hover:text-white transition duration-300">{{ nav.data.title }}</a>
+						<a href="{{ nav.url | url }}"  class="block text-sm font-semibold p-2 hover:bg-blue-500 hover:text-white transition duration-300">{{ nav.data.title }}</a>
 				{% endfor %}
 				</ul>
 			</div>

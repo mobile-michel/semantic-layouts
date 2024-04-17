@@ -11,7 +11,7 @@ import BaseBody from '../components/BaseBody.astro';
     <link rel="icon" type="image/ico" sizes="32x32" href="favicon.ico">
     <title>{title}</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/assets/css/version4/semantic.css">
+    <link rel="stylesheet" href="{{ '/assets/css/version4/semantic.css' | url }}">
 </head>
 <body class="font-sans antialiased bg-gray-100 dark:bg-gray-800 transition-colors">
     <div id="wrapper" class="mx-auto max-w-4xl">

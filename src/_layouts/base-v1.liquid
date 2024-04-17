@@ -20,7 +20,7 @@
         </section>
         <nav class="bg-zinc-400 flex flex-col md:flex-row text-center">
             {% for nav in collections.version1 %}
-            <a class="grow hover:bg-zinc-700 hover:text-white" href="{{ nav.url }}">{{ nav.data.title }}</a>
+            <a class="grow hover:bg-zinc-700 hover:text-white" href="{{ nav.url | url }}">{{ nav.data.title }}</a>
             {% endfor %}
         </nav>
 
