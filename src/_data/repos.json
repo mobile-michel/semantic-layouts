@@ -3,7 +3,7 @@
     [
         {
             "name": "Version 1",
-            "url": "version1",
+            "url": "/version1",
             "old-name": "tailwind-layouts-v1",
             "description": "Tailwind CSS",
             "github": "https://github.com/mobile-michel/tailwind-layout-v1",
@@ -12,7 +12,7 @@
         },
         {
             "name": "Version 2",
-            "url": "version2",
+            "url": "/version2",
             "old-name": "tailwind-templates-v1",
             "description": "Tailwind CSS",
             "github": "https://github.com/mobile-michel/tailwind-templates-v1",
@@ -21,7 +21,7 @@
         },
         {
             "name": "Version 3",
-            "url": "version3",
+            "url": "/version3",
             "old-name": "layouts-with-bg-image",
             "description": "Tailwind CSS",
             "github": "https://github.com/mobile-michel/layouts-with-background-image",
@@ -30,7 +30,7 @@
         },
         {
             "name": "Version 4",
-            "url": "version4",
+            "url": "/version4",
             "old-name": "basic-layout2",
             "description": "Tailwind CSS",
             "github": "https://github.com/mobile-michel/basic-layout2",
@@ -39,7 +39,7 @@
         },
         {
             "name": "Version 5",
-            "url": "version5",
+            "url": "/version5",
             "old-name": "semantic-layouts",
             "description": "CSS perso",
             "github": "https://github.com/mobile-michel/semantic-layouts",
@@ -48,7 +48,7 @@
         },
         {
             "name": "Version 6",
-            "url": "version6",
+            "url": "/version6",
             "old-name": "",
             "description": "CSS perso",
             "github": "https://github.com/mobile-michel/semantic-layouts",
